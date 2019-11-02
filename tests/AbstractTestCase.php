@@ -1,9 +1,9 @@
 <?php
 
-namespace Coderello\SocialGrant\Tests;
+namespace Icemix\SocialGrant\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Coderello\SocialGrant\Providers\SocialGrantServiceProvider;
+use Icemix\SocialGrant\Providers\SocialGrantServiceProvider;
 
 abstract class AbstractTestCase extends OrchestraTestCase
 {

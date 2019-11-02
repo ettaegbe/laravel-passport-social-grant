@@ -1,6 +1,6 @@
 <?php
 
-namespace Coderello\SocialGrant\Grants;
+namespace Icemix\SocialGrant\Grants;
 
 use League\OAuth2\Server\RequestEvent;
 use Psr\Http\Message\ServerRequestInterface;
@@ -9,7 +9,7 @@ use Laravel\Passport\Bridge\User as UserEntity;
 use League\OAuth2\Server\Exception\OAuthServerException;
 use League\OAuth2\Server\ResponseTypes\ResponseTypeInterface;
 use League\OAuth2\Server\Repositories\RefreshTokenRepositoryInterface;
-use Coderello\SocialGrant\Resolvers\SocialUserResolverInterface;
+use Icemix\SocialGrant\Resolvers\SocialUserResolverInterface;
 
 class SocialGrant extends AbstractGrant
 {

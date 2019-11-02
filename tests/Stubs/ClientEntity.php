@@ -1,6 +1,6 @@
 <?php
 
-namespace Coderello\SocialGrant\Tests\Stubs;
+namespace Icemix\SocialGrant\Tests\Stubs;
 
 use League\OAuth2\Server\Entities\Traits\ClientTrait;
 use League\OAuth2\Server\Entities\Traits\EntityTrait;

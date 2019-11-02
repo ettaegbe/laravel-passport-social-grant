@@ -1,23 +1,23 @@
 <?php
 
-namespace Coderello\SocialGrant\Tests;
+namespace Icemix\SocialGrant\Tests;
 
 use Zend\Diactoros\ServerRequest;
-use Coderello\SocialGrant\Tests\Stubs\User;
+use Icemix\SocialGrant\Tests\Stubs\User;
 use League\OAuth2\Server\Exception\OAuthServerException;
-use Coderello\SocialGrant\Grants\SocialGrant;
+use Icemix\SocialGrant\Grants\SocialGrant;
 use League\OAuth2\Server\Entities\AccessTokenEntityInterface;
 use League\OAuth2\Server\Entities\RefreshTokenEntityInterface;
-use Coderello\SocialGrant\Tests\Stubs\ScopeEntity;
+use Icemix\SocialGrant\Tests\Stubs\ScopeEntity;
 use League\OAuth2\Server\Repositories\ScopeRepositoryInterface;
-use Coderello\SocialGrant\Tests\Stubs\ClientEntity;
-use Coderello\SocialGrant\Tests\Stubs\ResponseType;
+use Icemix\SocialGrant\Tests\Stubs\ClientEntity;
+use Icemix\SocialGrant\Tests\Stubs\ResponseType;
 use League\OAuth2\Server\Repositories\ClientRepositoryInterface;
-use Coderello\SocialGrant\Tests\Stubs\AccessTokenEntity;
+use Icemix\SocialGrant\Tests\Stubs\AccessTokenEntity;
 use League\OAuth2\Server\Repositories\AccessTokenRepositoryInterface;
-use Coderello\SocialGrant\Tests\Stubs\RefreshTokenEntity;
+use Icemix\SocialGrant\Tests\Stubs\RefreshTokenEntity;
 use League\OAuth2\Server\Repositories\RefreshTokenRepositoryInterface;
-use Coderello\SocialGrant\Resolvers\SocialUserResolverInterface;
+use Icemix\SocialGrant\Resolvers\SocialUserResolverInterface;
 
 class SocialGrantTest extends AbstractTestCase
 {
