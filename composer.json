@@ -1,13 +1,13 @@
 {
-    "name": "coderello/laravel-passport-social-grant",
-    "description": "Social Grant for Laravel Passport",
-    "keywords": ["laravel", "passport", "social", "network", "grant", "oauth"],
+    "name": "icemix/laravel-passport-social-grant",
+    "description": "Icemix Social Grant for Laravel Passport",
+    "keywords": ["laravel","Icemix", "passport", "social", "network", "grant", "oauth"],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ilya Sakovich",
-            "email": "me@hivokas.com"
+            "name": "Etta Egbe Joseph",
+            "email": "ettaegbe@icemix.net"
         }
     ],
     "require": {
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Coderello\\SocialGrant\\": "src/"
+            "Icemix\\SocialGrant\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Coderello\\SocialGrant\\Tests\\": "tests/"
+            "Icemix\\SocialGrant\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -34,7 +34,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Coderello\\SocialGrant\\Providers\\SocialGrantServiceProvider"
+                "Icemix\\SocialGrant\\Providers\\SocialGrantServiceProvider"
             ]
         }
     }
