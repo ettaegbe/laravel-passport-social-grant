@@ -83,12 +83,24 @@ class SocialGrant extends AbstractGrant
             throw OAuthServerException::invalidRequest('provider');
         }
 
+
+
         $accessToken = $this->getRequestParameter('access_token', $request);
         if (is_null($accessToken)) {
             throw OAuthServerException::invalidRequest('access_token');
         }
 
-        $user = $this->resolver->resolveUserByProviderCredentials($provider, $accessToken);
+        $user = null;
+        if($provider == "twitter"){
+            $secret = $this->getRequestParameter('secret', $request);
+            if (is_null($secret)) {
+                throw OAuthServerException::invalidRequest('secret');
+            }
+            $user = $this->resolver->resolveUserByProviderAccessTokenAndSecret($provider, $accessToken,$secret);
+        }else{
+            $user = $this->resolver->resolveUserByProviderCredentials($provider, $accessToken);
+        }
+
         if (is_null($user)) {
             $this->getEmitter()->emit(new RequestEvent(RequestEvent::USER_AUTHENTICATION_FAILED, $request));
             throw OAuthServerException::invalidCredentials();

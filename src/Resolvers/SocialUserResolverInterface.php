@@ -15,4 +15,15 @@ interface SocialUserResolverInterface
      * @return Authenticatable|null
      */
     public function resolveUserByProviderCredentials(string $provider, string $accessToken): ?Authenticatable;
+
+    /**
+     * Resolve twitter user by provider credentials.
+     *
+     * @param string $provider
+     * @param string $accessToken
+     * @param string $secret
+     *
+     * @return Authenticatable|null
+     */
+    public function resolveUserByProviderAccessTokenAndSecret(string $provider, string $accessToken, string $secret): ?Authenticatable;
 }
